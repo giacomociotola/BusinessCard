@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:contentDescription="Contact"
+        app:srcCompat="@drawable/contact" />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_below="@id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:text="Ing. Giacomo Ciotola" />
+
+    <TextView
+        android:id="@+id/prof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/nome"
+        android:fontFamily="sans-serif"
+        android:text="Civil Engineer" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/prof"
+        android:fontFamily="sans-serif"
+        android:text="Via G. Castellaccio, 99" />
+
+    <TextView
+        android:id="@+id/zipCode"
+        android:layout_marginLeft="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/address"
+        android:fontFamily="sans-serif"
+        android:text="80075" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_marginLeft="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/zipCode"
+        android:fontFamily="sans-serif"
+        android:text="Forio (NA)" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_marginLeft="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/city"
+        android:fontFamily="sans-serif"
+        android:text="Italy" />
+
+    <ImageView
+        android:id="@+id/addressPic"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/prof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Address"
+        app:srcCompat="@drawable/address" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/contact"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="Picture"
+        app:srcCompat="@drawable/pic" />
+
+    <ImageView
+        android:id="@+id/phonePic"
+        android:layout_alignTop="@id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Phone"
+        app:srcCompat="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/country"
+        android:layout_toRightOf="@id/phonePic"
+        android:fontFamily="sans-serif"
+        android:text="+39 - 3735275628" />
+
+    <ImageView
+        android:id="@+id/mailPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/mail"
+        android:contentDescription="Mail"
+        app:srcCompat="@drawable/mail" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/phone"
+        android:layout_toRightOf="@id/mailPic"
+        android:fontFamily="sans-serif"
+        android:text="giacomo.ciotola@gmail.com" />
+
+    <ImageView
+        android:id="@+id/websitePic"
+        android:layout_alignTop="@id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Website"
+        app:srcCompat="@drawable/website" />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/mail"
+        android:layout_toRightOf="@id/websitePic"
+        android:fontFamily="sans-serif"
+        android:text="http://www.gcengineering.it" />
+
+    <ImageView
+        android:id="@+id/linkedinPic"
+        android:layout_alignTop="@id/linkedin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="LinkedIn"
+        app:srcCompat="@drawable/linkedin" />
+
+    <TextView
+        android:id="@+id/linkedin"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/website"
+        android:layout_toRightOf="@id/linkedinPic"
+        android:fontFamily="sans-serif"
+        android:text="giacomo-ciotola-62207333/" />
+
+    <ImageView
+        android:id="@+id/fbPic"
+        android:layout_alignTop="@id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Facebook"
+        app:srcCompat="@drawable/fb" />
+
+    <TextView
+        android:id="@+id/fb"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/linkedin"
+        android:layout_toRightOf="@id/fbPic"
+        android:fontFamily="sans-serif"
+        android:text="https://www.facebook.com/tokinho" />
+
+    <ImageView
+        android:id="@+id/twitterPic"
+        android:layout_alignTop="@id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Twitter"
+        app:srcCompat="@drawable/twitter" />
+
+    <TextView
+        android:id="@+id/twitter"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/fb"
+        android:layout_toRightOf="@id/twitterPic"
+        android:fontFamily="sans-serif"
+        android:text="https://twitter.com/giatoki" />
+
+    <ImageView
+        android:id="@+id/pinterestPic"
+        android:layout_alignTop="@id/pinterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Pinterest"
+        app:srcCompat="@drawable/pinterest" />
+
+    <TextView
+        android:id="@+id/pinterest"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/twitter"
+        android:layout_toRightOf="@id/pinterestPic"
+        android:fontFamily="sans-serif"
+        android:text="https://it.pinterest.com/cassettoattrezz/" />
+
+</RelativeLayout>
